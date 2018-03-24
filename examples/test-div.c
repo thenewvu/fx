@@ -22,9 +22,9 @@ FX_MAIN("div(a, b)", {
     FX_EACH(fx) {
       float res = div(fx.a, fx.b);
       if (res == fx.res) {
-        pass("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
+        FX_PASS("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
       } else {
-        fail("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
+        FX_FAIL("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
       }
     }
   });
@@ -39,9 +39,9 @@ FX_MAIN("div(a, b)", {
     FX_EACH(fx) {
       float res = div(fx.a, fx.b);
       if (res == fx.res) {
-        pass("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
+        FX_PASS("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
       } else {
-        fail("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
+        FX_FAIL("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
       }
     }
   });
@@ -58,9 +58,9 @@ FX_MAIN("div(a, b)", {
     FX_EACH(fx) {
       float res = div(fx.a, fx.b);
       if (res == fx.res) {
-        pass("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
+        FX_PASS("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
       } else {
-        fail("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
+        FX_FAIL("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
       }
     }
   });
@@ -77,9 +77,9 @@ FX_MAIN("div(a, b)", {
     FX_EACH(fx) {
       float res = div(fx.a, fx.b);
       if (isnan(res) == isnan(fx.res)) {
-        pass("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
+        FX_PASS("expect (%f / %f) = %f", fx.a, fx.b, fx.res);
       } else {
-        fail("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
+        FX_FAIL("expect (%f / %f) = %f (but got %f)", fx.a, fx.b, fx.res, res);
       }
     }
   });

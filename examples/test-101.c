@@ -14,9 +14,9 @@ FX_MAIN("fx101", {
     FX_EACH(fx) {
       bool res = fx.a == fx.b;
       if (res) {
-        pass("expect %d = %d", fx.a, fx.b);
+        FX_PASS("expect %d = %d", fx.a, fx.b);
       } else {
-        fail("expect %d = %d (but got %d)", fx.a, fx.b, res);
+        FX_FAIL("expect %d = %d (but got %d)", fx.a, fx.b, res);
       }
     }
   });

@@ -25,7 +25,7 @@
 #define ANSI_COLOR_YELLOW "\x1b[33m"
 #define ANSI_COLOR_RESET "\x1b[0m"
 
-#define fail(...)                                                              \
+#define FX_FAIL(...)                                                           \
   do {                                                                         \
     __FX_FAILED__++;                                                           \
     printf(ANSI_COLOR_YELLOW);                                                 \
@@ -35,7 +35,7 @@
     printf(ANSI_COLOR_RESET);                                                  \
   } while (0)
 
-#define pass(...)                                                              \
+#define FX_PASS(...)                                                           \
   do {                                                                         \
     __FX_PASSED__++;                                                           \
     printf("PASSED | %s | ", __FX_CASE__);                                     \
